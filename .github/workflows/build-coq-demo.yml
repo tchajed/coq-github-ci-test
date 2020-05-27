@@ -9,11 +9,10 @@ on:
 
 jobs:
   build:
-    runs-on: csail-openstack
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         coq_version:
-          - '8.11'
           - dev
         ocaml_version: ['4.07-flambda']
       max-parallel: 4
