@@ -1,6 +1,6 @@
 # docker-coq-github-action-demo
 
-[![CI](https://github.com/erikmd/docker-coq-github-action-demo/workflows/CI/badge.svg?branch=master)](https://github.com/erikmd/docker-coq-github-action-demo/actions?query=workflow%3ACI)
+[![CI](https://github.com/tchajed/coq-github-ci-test/workflows/CI/badge.svg?branch=master)](https://github.com/tchajed/coq-github-ci-test/actions?query=workflow%3ACI)
 
 Demo of:
 
