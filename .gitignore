@@ -81,6 +81,8 @@ setup.log
 *.v.d
 *.vio
 *.vo
+*.vos
+*.vok
 .coq-native/
 .csdp.cache
 .lia.cache
@@ -94,6 +96,5 @@ nlia.cache
 nra.cache
 
 ### Misc
-Makefile
 Makefile.conf
 .coqdeps.d
