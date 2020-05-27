@@ -42,24 +42,6 @@ jobs:
         coq_version: ${{ matrix.coq_version }}
         ocaml_version: ${{ matrix.ocaml_version }}
 
-  mathcomp:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        image:
-          - mathcomp/mathcomp:1.10.0-coq-8.10
-          - mathcomp/mathcomp:1.10.0-coq-8.11
-          - mathcomp/mathcomp:1.11.0-coq-dev
-          - mathcomp/mathcomp-dev:coq-dev
-      max-parallel: 4
-      fail-fast: false
-    steps:
-    - uses: actions/checkout@v2
-    - uses: coq-community/docker-coq-action@v1
-      with:
-        opam_file: './coq-demo.opam'
-        custom_image: ${{ matrix.image }}
-
 # Remark:
 # you may want to add the following badge to your README.md:
 # [![CI](https://github.com/$USER/$REPO/workflows/CI/badge.svg?branch=master)](https://github.com/$USER/$REPO/actions?query=workflow%3ACI)
